@@ -19,6 +19,16 @@ exec zsh                 # 重载
   f config.ts src/
   ```
 
+- `fd <exact-name> [path]` — 递归查找同名文件和文件夹，列出结果并确认后批量删除
+
+  ```sh
+  fd node_modules
+  fd .DS_Store ~/projects
+  ```
+
+  该函数会覆盖交互式 shell 中同名的 `fd` 命令；需要直接调用原始
+  `fd` 查找工具时，使用 `command fd ...`。现有的 `f` 已自动这样处理。
+
 ## 加新东西
 
 - 新函数：在 `functions/` 下加 `*.zsh`

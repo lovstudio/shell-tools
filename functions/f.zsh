@@ -11,5 +11,5 @@ f() {
     return 2
   fi
   local pattern="$1"; shift
-  fd "$pattern" "$@"
+  command fd "$pattern" "$@"
 }

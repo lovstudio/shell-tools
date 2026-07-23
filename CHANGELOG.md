@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- `fd <exact-name> [path]` — recursively find exact-name files/directories and delete after confirmation
+- `f` now calls the underlying `fd` binary explicitly to avoid the new function override
+
 ## 0.1.0
 
 - `f <pattern> [path]` — fd-based fuzzy file finder (zsh function)
